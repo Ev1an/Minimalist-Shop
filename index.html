@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Minimalista | Evian Fernández</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Favicon universal -->
+      <link rel="icon" href="icon/favicon.ico" sizes="any">
+      <link rel="icon" href="icon/favicon-32x32.png" type="image/svg+xml">
+      <link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+      <link rel="manifest" href="icon/site.webmanifest">
+  
+  
+  <style>
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .cart-badge {
+            top: -8px;
+            right: -8px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Barra de navegación -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-indigo-600">Minishop</a>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#products" class="hidden md:inline-block text-gray-600 hover:text-indigo-600">Productos</a>
+                <a href="#features" class="hidden md:inline-block text-gray-600 hover:text-indigo-600">Características</a>
+                <div class="relative">
+                    <a href="#cart" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="cart-badge absolute bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </a>
+                </div>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Tienda Minimalista</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Solución eCommerce perfecta para pequeños negocios</p>
+            <a href="#products" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="products" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Productos</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Producto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Reloj Elegante</h3>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Nuevo</span>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(128)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Reloj de pulsera con diseño moderno y resistente al agua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$89.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Producto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-lg">Audífonos Inalámbricos</h3>
+                            <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">-20%</span>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(256)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Sonido premium con cancelación de ruido y 20h de batería.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-lg text-indigo-600">$59.99</span>
+                                <span class="text-gray-400 text-sm line-through ml-2">$74.99</span>
+                            </div>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Producto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Cámara Compacta</h3>
+                        <div class="flex items-center mb-3">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm">(89)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Cámara profesional con 4K y estabilización de imagen.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$249.99</span>
+                            <button class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="features" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Por qué elegirnos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Envío Rápido</h3>
+                    <p class="text-gray-600">Entrega rápida por toda la ciudad.</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Pago Seguro</h3>
+                    <p class="text-gray-600">Protegemos tus datos con encriptación SSL.</p>
+                </div>
+                
+                <div class="text-center p-6 bg-white rounded-lg shadow-sm">
+                    <div class="text-indigo-600 text-4xl mb-4">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">Soporte 24/7</h3>
+                    <p class="text-gray-600">Nuestro equipo está siempre disponible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de compras (simplificado) -->
+    <section id="cart" class="py-12 bg-white hidden">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Tu Carrito</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-6">
+                <div class="border-b pb-4 mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-semibold">Productos (3)</h3>
+                        <button class="text-red-500 text-sm">
+                            <i class="fas fa-trash mr-1"></i> Vaciar carrito
+                        </button>
+                    </div>
+                    
+                    <!-- Item del carrito -->
+                    <div class="flex justify-between items-center py-3">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Producto" class="w-16 h-16 object-cover rounded mr-4">
+                            <div>
+                                <h4 class="font-medium">Reloj Elegante</h4>
+                                <p class="text-gray-500 text-sm">Cantidad: 1</p>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="font-medium">$89.99</p>
+                            <button class="text-red-500 text-sm">
+                                <i class="fas fa-times"></i> Eliminar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Resumen -->
+                    <div class="border-t mt-4 pt-4">
+                        <div class="flex justify-between mb-2">
+                            <span>Subtotal:</span>
+                            <span class="font-medium">$179.98</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span>Envío:</span>
+                            <span class="font-medium">Gratis</span>
+                        </div>
+                        <div class="flex justify-between text-lg font-bold mt-4">
+                            <span>Total:</span>
+                            <span>$179.98</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                    Proceder al pago
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Minishop</h3>
+                    <p class="text-gray-400">La solución eCommerce para tu pequeño negocio.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-semibold mb-3">Enlaces</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                            <li><a href="#products" class="text-gray-400 hover:text-white transition">Productos</a></li>
+                            <li><a href="#features" class="text-gray-400 hover:text-white transition">Características</a></li>
+                            <li><a href="#cart" class="text-gray-400 hover:text-white transition">Carrito</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-3">Contacto</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400"><i class="fas fa-envelope mr-2"></i> contacto@minishop.com</li>
+                            <li class="text-gray-400"><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 Minishop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Interacción básica del carrito
+        document.addEventListener('DOMContentLoaded', function() {
+            // Alternar visibilidad del carrito
+            const cartLink = document.querySelector('a[href="#cart"]');
+            const cartSection = document.getElementById('cart');
+            
+            cartLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                cartSection.classList.toggle('hidden');
+            });
+            
+            // Simular añadir al carrito
+            const addButtons = document.querySelectorAll('.product-card button');
+            const cartBadge = document.querySelector('.cart-badge');
+            let cartCount = 3;
+            
+            addButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartCount++;
+                    cartBadge.textContent = cartCount;
+                    
+                    // Animación
+                    cartBadge.classList.add('animate-ping');
+                    setTimeout(() => {
+                        cartBadge.classList.remove('animate-ping');
+                    }, 500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
