@@ -1,7 +1,6 @@
 ### Tienda Minimalista eCommerce
 
 **Tecnologías:** HTML5, Tailwind CSS, JavaScript  
-**Demo:** [Ver online](#) | **Código:** [GitHub](#)
 
 **Consejo profesional:**  
 *"Este proyecto demuestra cómo pequeños negocios pueden implementar un eCommerce funcional con bajo presupuesto.  
